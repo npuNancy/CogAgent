@@ -8,7 +8,18 @@
 
 ```shell
 cd app
+```
+
+在远程服务器拉起服务
+
+```shell
 python openai_demo.py --model_path THUDM/cogagent-9b-20241220 --host 0.0.0.0 --port 7870
+```
+
+或者使用vllm启动远程服务
+
+```shell
+python vllm_openai_demo.py --model_path THUDM/cogagent-9b-20241220 --host 0.0.0.0 --port 7870
 ```
 
 这将在服务器拉起一个模仿`OpenAI`接口格式的服务端，默认端口部署在 http://0.0.0.0:7870 。
